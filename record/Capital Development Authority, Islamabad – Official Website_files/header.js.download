@@ -1,0 +1,39 @@
+$(document).ready(function () {
+ 
+$('.search_cda').on('click', function () {
+
+            var name = $('#query-input').val();
+            if (name) {
+                window.location = 'http://www.cda.gov.pk/includes/search.asp?q=' + name;
+            }
+        });
+
+$('.searchbox').keypress(function (e) {
+   if(e.which ==13){
+    var name = $('#query-input').val();
+            if (name) {
+                window.location = 'http://www.cda.gov.pk/includes/search.asp?q=' + name;
+            }
+            }
+});
+
+});
+
+
+    function inputFocus() {
+            document.getElementById('query-input').style['background'] = 'white';
+        }
+
+   window.inputBlur =  function inputBlur() {
+       var queryInput = document.getElementById('query-input');
+            if (!queryInput.value) {
+          
+                queryInput.style['background'] = 'white url(http://www.google.com/coop/images/google_custom_search_watermark.gif) no-repeat 0% 50%';
+
+                document.getElementById('query-input').className = 'searchbox';
+            }
+        }
+             
+            
+            
+            

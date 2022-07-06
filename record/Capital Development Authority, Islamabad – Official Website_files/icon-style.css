@@ -1,0 +1,50 @@
+a.pdf { /*The background image*/
+	background: url(../graphics/pdf.png) no-repeat left center;
+	padding-left: 20px;
+	line-height: 16px; /* To center the text vertically with the icon */
+}
+
+a.pdf_start { /*The background image*/
+	background: url(../graphics/pdf.png) no-repeat left center;
+	background-position:0%;
+	padding-left: 20px !important;
+	line-height: 16px; /* To center the text vertically with the icon */
+}
+
+a.txt { /*The background image*/
+	background: url(../graphics/txt.png) no-repeat left center;
+	padding-left: 20px !important;
+	line-height: 16px;
+	padding-top:5px;
+	padding-bottom: 0px;
+}
+
+a.txt_start { /*The background image*/
+	background: url(../graphics/txt.png) no-repeat left center;
+        background-position:0%;
+        padding:2px 0 !important;
+	padding-left: 22px !important;
+	line-height: 16px;
+	
+}
+
+a.zip { /*The background image*/
+	background: url(../graphics/py/zip.jpg) no-repeat left center;
+	
+	line-height: 16px;
+	padding-top:7px;
+	padding-bottom:0px;
+	padding-left: 25px;
+}
+
+a.email {
+	background: url(../graphics/email.png) no-repeat left center;
+	padding-left: 20px;
+	line-height: 16px;
+}
+
+a.external {
+	background: url(../graphics/ext_link.png) no-repeat left center;
+	padding-left: 20px;
+	line-height: 16px;
+}

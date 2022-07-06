@@ -1,0 +1,9 @@
+$(function(){$('#slider').anythingSlider({onSlideComplete : function(slider){var text = $("#slider li:nth-child(" + (slider.currentPage +1) + ") .descr").html();var val = slider.currentPage +1;var n = text.concat(val);$("#description").css({ "display" : "none"});$("#description").html(text);$(".cont").css({ "display" : "none"});$('#description').animate({ width: 'show' },500,function() {$(".cont").fadeIn();$(".cont-desc").fadeIn();});if (slider.playing === true){setTimeout(function() {$(".cont").fadeOut("fast");},5500);setTimeout(function() {$('#description').animate({ width: 'hide' },500);},6000);}},onInitialized : function(slider){var text = $("#slider li:nth-child(2) .descr").html();$("#description").html(text);setTimeout(function() {$('#description').animate({ width: 'show' },500,function() {$(".cont").fadeIn();$(".cont-desc").fadeIn();});},1000);},onSlideInit : function(slider){$("#description").html("");},appendNavigationTo : $('#nav'),
+buildArrows : false,
+buildStartStop: false,
+hashTags : false,
+autoPlay : true,
+pauseOnHover : false,
+delay : 7000
+});
+});
